@@ -1,0 +1,353 @@
+Attaching to warnings-ng-plugin-devenv_jenkins-master_1, warnings-ng-plugin-devenv_nginx-proxy_1, warnings-ng-plugin-devenv_java-agent_1
+[33mnginx-proxy_1     |[0m Custom dhparam.pem file found, generation skipped
+[33mnginx-proxy_1     |[0m [0;37;1mforego     | [0mstarting dockergen.1 on port 5000
+[33mnginx-proxy_1     |[0m [0;37;1mforego     | [0mstarting nginx.1 on port 5100
+[32mjava-agent_1      |[0m addgroup: group 'tempgroup' in use
+[32mjava-agent_1      |[0m Added user agent to group GID 1000
+[32mjava-agent_1      |[0m Server listening on 0.0.0.0 port 22.
+[32mjava-agent_1      |[0m Server listening on :: port 22.
+[33mnginx-proxy_1     |[0m [0;36;1mdockergen.1 | [0;31;1m2019/04/04 12:16:32 Generated '/etc/nginx/conf.d/default.conf' from 3 containers
+[33mnginx-proxy_1     |[0m [0m[0;36;1mdockergen.1 | [0;31;1m2019/04/04 12:16:32 Watching docker events
+[33mnginx-proxy_1     |[0m [0m[0;36;1mdockergen.1 | [0;31;1m2019/04/04 12:16:33 Contents of /etc/nginx/conf.d/default.conf did not change. Skipping notification 'nginx -s reload'
+[36mjenkins-master_1  |[0m Listening for transport dt_socket at address: 8000
+[36mjenkins-master_1  |[0m Running from: /usr/share/jenkins/jenkins.war
+[36mjenkins-master_1  |[0m webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:36 PM org.eclipse.jetty.util.log.Log initialized
+[36mjenkins-master_1  |[0m INFO: Logging initialized @2263ms to org.eclipse.jetty.util.log.JavaUtilLog
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:37 PM winstone.Logger logInternal
+[36mjenkins-master_1  |[0m INFO: Beginning extraction from war file
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:37 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+[36mjenkins-master_1  |[0m WARNING: Empty contextPath
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:38 PM org.eclipse.jetty.server.Server doStart
+[36mjenkins-master_1  |[0m INFO: jetty-9.4.z-SNAPSHOT; built: 2018-08-30T13:59:14.071Z; git: 27208684755d94a92186989f695db2d7b21ebc51; jvm 1.8.0_191-b12
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:40 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+[36mjenkins-master_1  |[0m INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:40 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+[36mjenkins-master_1  |[0m INFO: DefaultSessionIdManager workerName=node0
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:40 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+[36mjenkins-master_1  |[0m INFO: No SessionScavenger set, using defaults
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:40 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+[36mjenkins-master_1  |[0m INFO: node0 Scavenging every 600000ms
+[36mjenkins-master_1  |[0m Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:44 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+[36mjenkins-master_1  |[0m INFO: Started w.@560cbf1a{Jenkins v2.164.1,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:45 PM org.eclipse.jetty.server.AbstractConnector doStart
+[36mjenkins-master_1  |[0m INFO: Started ServerConnector@3670f00{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:45 PM org.eclipse.jetty.server.Server doStart
+[36mjenkins-master_1  |[0m INFO: Started @10575ms
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:45 PM winstone.Logger logInternal
+[36mjenkins-master_1  |[0m INFO: Winstone Servlet Engine v4.0 running: controlPort=disabled
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:55 PM jenkins.InitReactorRunner$1 onAttained
+[36mjenkins-master_1  |[0m INFO: Started initialization
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:16:58 PM jenkins.InitReactorRunner$1 onAttained
+[36mjenkins-master_1  |[0m INFO: Listed all plugins
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:17:02 PM org.jenkinsci.plugins.TrileadApiPlugin start
+[36mjenkins-master_1  |[0m INFO: Trilead being provided from file:/var/jenkins_home/war/WEB-INF/lib/trilead-ssh2-build-217-jenkins-14.jar
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:17:58 PM jenkins.InitReactorRunner$1 onAttained
+[36mjenkins-master_1  |[0m INFO: Prepared all plugins
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:17:58 PM jenkins.InitReactorRunner$1 onAttained
+[36mjenkins-master_1  |[0m INFO: Started all plugins
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:31 PM jenkins.InitReactorRunner$1 onAttained
+[36mjenkins-master_1  |[0m INFO: Augmented all extensions
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:32 PM hudson.slaves.SlaveComputer tryReconnect
+[36mjenkins-master_1  |[0m INFO: Attempting to reconnect java-agent
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:35 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.model.AllView.name = all
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:35 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.security.csrf.DefaultCrumbIssuer.excludeClientIPFromCrumb = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:35 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.markup.RawHtmlMarkupFormatter.disableSyntaxHighlighting = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:35 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.security.HudsonPrivateSecurityRealm.allowsSignup = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:35 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.security.HudsonPrivateSecurityRealm.enableCaptcha = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:35 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class io.jenkins.plugins.casc.core.HudsonPrivateSecurityRealmConfigurator$UserWithPassword.id = admin
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:35 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.security.HudsonPrivateSecurityRealm@15c4e823.users = [io.jenkins.plugins.casc.core.HudsonPrivateSecurityRealmConfigurator$UserWithPassword@30aac7d5]
+[32mjava-agent_1      |[0m Accepted publickey for agent from 172.18.0.3 port 36516 ssh2: RSA SHA256:QjFkzop9o17q8pqr9Ei59EOoHd2vtCJUAZb6eLEuIxo
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.slaves.DumbSlave.name = java-agent
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.slaves.DumbSlave.remoteFS = /var/data
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.host = java-agent
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.port = 22
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.credentialsId = java-agent-ssh-private-key
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.launchTimeoutSeconds = 210
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.maxNumRetries = 10
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.retryWaitTime = 15
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.slaves.DumbSlave.launcher = {sSHLauncher={}}
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.slaves.DumbSlave[java-agent].numExecutors = 1
+[32mjava-agent_1      |[0m subsystem request for sftp by user agent failed, subsystem not found
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey.scope = GLOBAL
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey.id = java-agent-ssh-private-key
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey.username = agent
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource.privateKey = -----BEGIN RSA PRIVATE KEY----- 
+[36mjenkins-master_1  |[0m  MIIEowIBAAKCAQEA86cZk1vZh/OwzJDEqga0nnKEh1QpCm1uSDjvuLp2pPDPHMp/ 
+[36mjenkins-master_1  |[0m  m9Il9O8ZAZ+IVCUXygO3s1BvBF/a7uVYp7XqjDiTj5Jwrs5lEtl4/1iXXKtwbpAc 
+[36mjenkins-master_1  |[0m  bsoiEaFDl7Amc4pUfwzsjaqY4yN4jW+JaLOf/+GqCjwpiyJxZ0N2ONlWoph9dvfH 
+[36mjenkins-master_1  |[0m  JBK+LUcbKIqbBAADT12d6ePIBsDn9Yaeem0xSJrwEzcMTFYj6asinMlWgO7VwgZx 
+[36mjenkins-master_1  |[0m  JPxhMG+jIq6Mh20tFbwc/XGTqSb/vMkJ8i53RnYm5PoT2xqeYlQCLJtvBRBfuBb5 
+[36mjenkins-master_1  |[0m  WJaQcKvTmLoTgkRCbx/QsQzIWzl4MCj56PRsjQIDAQABAoIBAAGTiy7Q4U9n3DT2 
+[36mjenkins-master_1  |[0m  ms8ey/xacVEO0lUm8Be3hpWDX1Eh3bUp+jlf2q8C/P5tscwZkVXVQFMAqjc1B42U 
+[36mjenkins-master_1  |[0m  Hka3fpT5qLq9D82RuEWu8oF0aUZINaoBdK2i0SWcDXvlv9nvgyxvQPiJqgOOLzF7 
+[36mjenkins-master_1  |[0m  D0CGKPrW0urOCNbFmkY4wYMMpOrYXnwb6bc1p7snbzeRigaoGvSgvH7fx2Steg1o 
+[36mjenkins-master_1  |[0m  j50C4BKVtXPKQdmckG2SFn0T+U1iCsRG+KNcENX2vX8gyrXImAH093WTjKsmM9et 
+[36mjenkins-master_1  |[0m  ddWB+molSnXR/MNrf6BB2mpvXLNyR2/RgBd2jwSQnpDkpms4Br5nek3YYN1dBRL4 
+[36mjenkins-master_1  |[0m  6bofHWECgYEA+7n5OIEbvpMtGxJwOovj0KZMzPkHyQH/DZzo48rS+39goNk/0KLF 
+[36mjenkins-master_1  |[0m  c3L3sHbT3Lr4qA/6JOCjlzw7o2AbOrRL4ke1uqcCVQMdDqZdvNezMvTzqEbQGdHD 
+[36mjenkins-master_1  |[0m  aFnEcUV2tvEwP11q37ianBRPH5stOnEwQNuv6AJo5LKwi4mTS7qEW9cCgYEA98oJ 
+[36mjenkins-master_1  |[0m  h+vMKpXGdJzkSDMzYBrC2tYgqjby6+zGKz8BZ58YecsL+oi2GXBaDTfK+16CKeFM 
+[36mjenkins-master_1  |[0m  8+qQN9Kl1ZNOlk64XJXjt77h0FcFuGe+6rUpM1aEizrf9sWPVZO+QQfhnjsiAhtQ 
+[36mjenkins-master_1  |[0m  YX783ydy9rMn1FDPMtNNq4GMhGsFCaL4RupOjjsCgYAnk9XbTHFQRVOSLhP3IIdx 
+[36mjenkins-master_1  |[0m  BrSMhZrzv5yaR1FWf00svZozr/SYmP7yZ+EJnaUxzzPJOLnbknYmERJPXYzqbe6A 
+[36mjenkins-master_1  |[0m  ZUXtUtTLCPJIm1+hkUhbeqfUjU2qwZA3l+WK6aEAomszizyCcEPexlKqZXt29NTh 
+[36mjenkins-master_1  |[0m  XakKkVZsnqujRL4j6e9lgQKBgQDvhD8EQJyAyXgkvoc3dy6BBj019WdrwWO9Q4km 
+[36mjenkins-master_1  |[0m  wmdkN3gcOnYgvUdwfZa+UiEGLAub2eldmW3AWADu2s5LIlq5PDX7Jir3DTc9UiNM 
+[36mjenkins-master_1  |[0m  ksL5mfbS8p0M11i+uupbx/eB0N0FtktTgsGCH4rUBsdIRriSA4h/cOFYGm6rKvnc 
+[36mjenkins-master_1  |[0m  6p32gwKBgHZYmXzuBWZlWEmPiXbTaI4egJugur5FrT6BJfiLsN2MHBJi9k1IpKEP 
+[36mjenkins-master_1  |[0m  SaT+v0IXJ8jP4gSiu4/gyJQpkn7yiMNhwYWlQt+1zyIkHjUsEG82Z8Mqpjx2EJgG 
+[36mjenkins-master_1  |[0m  MxDybQux1uk0hyCmMS757WkbTyi0pTWz7PgTIdfmYqhZVV8KRSUi 
+[36mjenkins-master_1  |[0m  -----END RSA PRIVATE KEY----- 
+[36mjenkins-master_1  |[0m 
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey.privateKeySource = {directEntry={}}
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.plugins.credentials.domains.DomainCredentials.credentials = [{basicSSHUserPrivateKey={}}]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:37 PM io.jenkins.plugins.casc.BaseConfigurator createAttribute
+[36mjenkins-master_1  |[0m WARNING: Can't handle class javaposse.jobdsl.plugin.GlobalJobDslSecurityConfiguration#metaClass: type is abstract but not Describable.
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class org.jenkinsci.plugins.simpletheme.CssUrlThemeElement.url = http://localhost:8081/userContent/material-blue-grey.css
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tools.JDKInstaller.acceptLicense = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tools.InstallSourceProperty.installers = [{jdkInstaller={}}]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tasks.Maven$MavenInstallation.name = mvn-default
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tasks.Maven$MavenInstaller.id = 3.6.0
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tools.InstallSourceProperty.installers = [{maven={}}]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tasks.Maven$MavenInstallation.properties = [{installSource={}}]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting JunitTestsPublisher[disabled=false,healthScaleFactor=,keepLongStdio=false,ignoreAttachments=false].healthScaleFactor = 1.0
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:43 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting JunitTestsPublisher[disabled=false,healthScaleFactor=1.0,keepLongStdio=false,ignoreAttachments=false].disabled = true
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:44 PM io.jenkins.plugins.casc.impl.secrets.VaultSecretSource getCommaSeparatedVariables
+[36mjenkins-master_1  |[0m WARNING: [Deprecation Warning] CASC_VAULT_PATH will be deprecated. Please use CASC_VAULT_PATHS instead.
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:44 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.systemMessage = <h1>Warnings Next Generation Plugin Showcase</h1>
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:44 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.agentProtocols = [JNLP4-connect, Ping]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.model.AllView.name = all
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.primaryView = hudson.model.AllView@456ad31[view/all/]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.mode = NORMAL
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.numExecutors = 0
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.quietPeriod = 5
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.scmCheckoutRetryCount = 0
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.security.csrf.DefaultCrumbIssuer.excludeClientIPFromCrumb = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.crumbIssuer = hudson.security.csrf.DefaultCrumbIssuer@5ea1c11c
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.disableRememberMe = true
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.markup.RawHtmlMarkupFormatter.disableSyntaxHighlighting = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.markupFormatter = hudson.markup.RawHtmlMarkupFormatter@7fe6d161
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.security.HudsonPrivateSecurityRealm.allowsSignup = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.security.HudsonPrivateSecurityRealm.enableCaptcha = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class io.jenkins.plugins.casc.core.HudsonPrivateSecurityRealmConfigurator$UserWithPassword.id = admin
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:46 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.security.HudsonPrivateSecurityRealm@654b6da9.users = [io.jenkins.plugins.casc.core.HudsonPrivateSecurityRealmConfigurator$UserWithPassword@5ed24b1a]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:47 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.securityRealm = hudson.security.HudsonPrivateSecurityRealm@654b6da9
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:51 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+[36mjenkins-master_1  |[0m INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@5d27f397: display name [Root WebApplicationContext]; startup date [Thu Apr 04 12:18:51 GMT 2019]; root of context hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:51 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+[36mjenkins-master_1  |[0m INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@5d27f397]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2d515a18
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:51 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+[36mjenkins-master_1  |[0m INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d515a18: defining beans [authenticationManager]; root of factory hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+[36mjenkins-master_1  |[0m INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@37809a29: display name [Root WebApplicationContext]; startup date [Thu Apr 04 12:18:54 GMT 2019]; root of context hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+[36mjenkins-master_1  |[0m INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@37809a29]: org.springframework.beans.factory.support.DefaultListableBeanFactory@4c2ad49f
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+[36mjenkins-master_1  |[0m INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c2ad49f: defining beans [filter,legacy]; root of factory hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.slaveAgentPort = 50000
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.slaves.DumbSlave.name = java-agent
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.slaves.DumbSlave.remoteFS = /var/data
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.host = java-agent
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.port = 22
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.credentialsId = java-agent-ssh-private-key
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.launchTimeoutSeconds = 210
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.maxNumRetries = 10
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.plugins.sshslaves.SSHLauncher.retryWaitTime = 15
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.slaves.DumbSlave.launcher = {sSHLauncher={}}
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.slaves.DumbSlave[java-agent].numExecutors = 1
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:54 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.model.Hudson@5847e7ec.nodes = [hudson.slaves.DumbSlave[java-agent]]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:55 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey.scope = GLOBAL
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:55 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey.id = java-agent-ssh-private-key
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:55 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey.username = agent
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:55 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource.privateKey = -----BEGIN RSA PRIVATE KEY----- 
+[36mjenkins-master_1  |[0m  MIIEowIBAAKCAQEA86cZk1vZh/OwzJDEqga0nnKEh1QpCm1uSDjvuLp2pPDPHMp/ 
+[36mjenkins-master_1  |[0m  m9Il9O8ZAZ+IVCUXygO3s1BvBF/a7uVYp7XqjDiTj5Jwrs5lEtl4/1iXXKtwbpAc 
+[36mjenkins-master_1  |[0m  bsoiEaFDl7Amc4pUfwzsjaqY4yN4jW+JaLOf/+GqCjwpiyJxZ0N2ONlWoph9dvfH 
+[36mjenkins-master_1  |[0m  JBK+LUcbKIqbBAADT12d6ePIBsDn9Yaeem0xSJrwEzcMTFYj6asinMlWgO7VwgZx 
+[36mjenkins-master_1  |[0m  JPxhMG+jIq6Mh20tFbwc/XGTqSb/vMkJ8i53RnYm5PoT2xqeYlQCLJtvBRBfuBb5 
+[36mjenkins-master_1  |[0m  WJaQcKvTmLoTgkRCbx/QsQzIWzl4MCj56PRsjQIDAQABAoIBAAGTiy7Q4U9n3DT2 
+[36mjenkins-master_1  |[0m  ms8ey/xacVEO0lUm8Be3hpWDX1Eh3bUp+jlf2q8C/P5tscwZkVXVQFMAqjc1B42U 
+[36mjenkins-master_1  |[0m  Hka3fpT5qLq9D82RuEWu8oF0aUZINaoBdK2i0SWcDXvlv9nvgyxvQPiJqgOOLzF7 
+[36mjenkins-master_1  |[0m  D0CGKPrW0urOCNbFmkY4wYMMpOrYXnwb6bc1p7snbzeRigaoGvSgvH7fx2Steg1o 
+[36mjenkins-master_1  |[0m  j50C4BKVtXPKQdmckG2SFn0T+U1iCsRG+KNcENX2vX8gyrXImAH093WTjKsmM9et 
+[36mjenkins-master_1  |[0m  ddWB+molSnXR/MNrf6BB2mpvXLNyR2/RgBd2jwSQnpDkpms4Br5nek3YYN1dBRL4 
+[36mjenkins-master_1  |[0m  6bofHWECgYEA+7n5OIEbvpMtGxJwOovj0KZMzPkHyQH/DZzo48rS+39goNk/0KLF 
+[36mjenkins-master_1  |[0m  c3L3sHbT3Lr4qA/6JOCjlzw7o2AbOrRL4ke1uqcCVQMdDqZdvNezMvTzqEbQGdHD 
+[36mjenkins-master_1  |[0m  aFnEcUV2tvEwP11q37ianBRPH5stOnEwQNuv6AJo5LKwi4mTS7qEW9cCgYEA98oJ 
+[36mjenkins-master_1  |[0m  h+vMKpXGdJzkSDMzYBrC2tYgqjby6+zGKz8BZ58YecsL+oi2GXBaDTfK+16CKeFM 
+[36mjenkins-master_1  |[0m  8+qQN9Kl1ZNOlk64XJXjt77h0FcFuGe+6rUpM1aEizrf9sWPVZO+QQfhnjsiAhtQ 
+[36mjenkins-master_1  |[0m  YX783ydy9rMn1FDPMtNNq4GMhGsFCaL4RupOjjsCgYAnk9XbTHFQRVOSLhP3IIdx 
+[36mjenkins-master_1  |[0m  BrSMhZrzv5yaR1FWf00svZozr/SYmP7yZ+EJnaUxzzPJOLnbknYmERJPXYzqbe6A 
+[36mjenkins-master_1  |[0m  ZUXtUtTLCPJIm1+hkUhbeqfUjU2qwZA3l+WK6aEAomszizyCcEPexlKqZXt29NTh 
+[36mjenkins-master_1  |[0m  XakKkVZsnqujRL4j6e9lgQKBgQDvhD8EQJyAyXgkvoc3dy6BBj019WdrwWO9Q4km 
+[36mjenkins-master_1  |[0m  wmdkN3gcOnYgvUdwfZa+UiEGLAub2eldmW3AWADu2s5LIlq5PDX7Jir3DTc9UiNM 
+[36mjenkins-master_1  |[0m  ksL5mfbS8p0M11i+uupbx/eB0N0FtktTgsGCH4rUBsdIRriSA4h/cOFYGm6rKvnc 
+[36mjenkins-master_1  |[0m  6p32gwKBgHZYmXzuBWZlWEmPiXbTaI4egJugur5FrT6BJfiLsN2MHBJi9k1IpKEP 
+[36mjenkins-master_1  |[0m  SaT+v0IXJ8jP4gSiu4/gyJQpkn7yiMNhwYWlQt+1zyIkHjUsEG82Z8Mqpjx2EJgG 
+[36mjenkins-master_1  |[0m  MxDybQux1uk0hyCmMS757WkbTyi0pTWz7PgTIdfmYqhZVV8KRSUi 
+[36mjenkins-master_1  |[0m  -----END RSA PRIVATE KEY----- 
+[36mjenkins-master_1  |[0m 
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:55 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey.privateKeySource = {directEntry={}}
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:55 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class com.cloudbees.plugins.credentials.domains.DomainCredentials.credentials = [{basicSSHUserPrivateKey={}}]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:55 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting com.cloudbees.plugins.credentials.SystemCredentialsProvider@3fcdd03e.domainCredentials = [com.cloudbees.plugins.credentials.domains.DomainCredentials@4b0cfd73]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:18:55 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting com.cloudbees.plugins.credentials.GlobalCredentialsConfiguration@40e783e8.system = com.cloudbees.plugins.credentials.SystemCredentialsProvider@3fcdd03e
+[36mjenkins-master_1  |[0m Processing provided DSL script
+[36mjenkins-master_1  |[0m [04/04/19 12:19:09] SSH Launch of java-agent on java-agent completed in 36,303 ms
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:21 PM javaposse.jobdsl.plugin.JenkinsJobManagement createOrUpdateConfig
+[36mjenkins-master_1  |[0m INFO: createOrUpdateConfig for pipeline-analysis-model
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:22 PM javaposse.jobdsl.plugin.JenkinsJobManagement createOrUpdateConfig
+[36mjenkins-master_1  |[0m INFO: createOrUpdateConfig for pipeline-warnings-ng
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:22 PM io.jenkins.plugins.casc.BaseConfigurator createAttribute
+[36mjenkins-master_1  |[0m WARNING: Can't handle class javaposse.jobdsl.plugin.GlobalJobDslSecurityConfiguration#metaClass: type is abstract but not Describable.
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:22 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.CLI@6a0cb9e1.enabled = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:22 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.model.GlobalConfigurationCategory$Security@233669ae.remotingCLI = jenkins.CLI@6a0cb9e1
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class org.jenkinsci.plugins.simpletheme.CssUrlThemeElement.url = http://localhost:8081/userContent/material-blue-grey.css
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting org.codefirst.SimpleThemeDecorator@1a6fcfa5.elements = [org.jenkinsci.plugins.simpletheme.CssUrlThemeElement@1da8ab40]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.model.GlobalConfigurationCategory$Unclassified@567705ec.simple-theme-plugin = org.codefirst.SimpleThemeDecorator@1a6fcfa5
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.model.JenkinsLocationConfiguration@3201ea60.adminAddress = Adresse nicht konfiguriert <nobody@nowhere>
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.model.JenkinsLocationConfiguration@3201ea60.url = http://localhost:8081/
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.model.GlobalConfigurationCategory$Unclassified@567705ec.location = jenkins.model.JenkinsLocationConfiguration@3201ea60
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tools.JDKInstaller.acceptLicense = false
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tools.InstallSourceProperty.installers = [{jdkInstaller={}}]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.tools.ToolConfigurationCategory@376b1526.jdk = hudson.model.JDK$DescriptorImpl@465d2255
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tasks.Maven$MavenInstallation.name = mvn-default
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tasks.Maven$MavenInstaller.id = 3.6.0
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tools.InstallSourceProperty.installers = [{maven={}}]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.impl.configurators.DataBoundConfigurator tryConstructor
+[36mjenkins-master_1  |[0m INFO: Setting class hudson.tasks.Maven$MavenInstallation.properties = [{installSource={}}]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.mvn.GlobalMavenConfig@3cf87950.installations = [MavenInstallation[mvn-default]]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting hudson.tasks.Maven$DescriptorImpl@752d371b.installations = [MavenInstallation[mvn-default]]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.tools.ToolConfigurationCategory@376b1526.maven = jenkins.mvn.GlobalMavenConfig@3cf87950
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting JunitTestsPublisher[disabled=false,healthScaleFactor=,keepLongStdio=false,ignoreAttachments=false].healthScaleFactor = 1.0
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting JunitTestsPublisher[disabled=false,healthScaleFactor=1.0,keepLongStdio=false,ignoreAttachments=false].disabled = true
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting org.jenkinsci.plugins.pipeline.maven.GlobalPipelineMavenConfig@5161167c.publisherOptions = [JunitTestsPublisher[disabled=true,healthScaleFactor=1.0,keepLongStdio=false,ignoreAttachments=false]]
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM io.jenkins.plugins.casc.Attribute setValue
+[36mjenkins-master_1  |[0m INFO: Setting jenkins.tools.ToolConfigurationCategory@376b1526.pipelineMaven = org.jenkinsci.plugins.pipeline.maven.GlobalPipelineMavenConfig@5161167c
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM jenkins.InitReactorRunner$1 onAttained
+[36mjenkins-master_1  |[0m INFO: Loaded all jobs
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM jenkins.util.groovy.GroovyHookScript execute
+[36mjenkins-master_1  |[0m INFO: Executing /var/jenkins_home/init.groovy.d/basic-security.groovy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM hudson.model.AsyncPeriodicWork$1 run
+[36mjenkins-master_1  |[0m INFO: Started Download metadata
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:26 PM hudson.model.AsyncPeriodicWork$1 run
+[36mjenkins-master_1  |[0m INFO: Finished Download metadata. 47 ms
+[36mjenkins-master_1  |[0m --> creating local user 'admin'
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:28 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+[36mjenkins-master_1  |[0m INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@4878f4d: display name [Root WebApplicationContext]; startup date [Thu Apr 04 12:19:28 GMT 2019]; root of context hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:28 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+[36mjenkins-master_1  |[0m INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@4878f4d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@b436a2b
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:28 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+[36mjenkins-master_1  |[0m INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b436a2b: defining beans [filter,legacy]; root of factory hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:28 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+[36mjenkins-master_1  |[0m INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@60c83150: display name [Root WebApplicationContext]; startup date [Thu Apr 04 12:19:28 GMT 2019]; root of context hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:28 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+[36mjenkins-master_1  |[0m INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@60c83150]: org.springframework.beans.factory.support.DefaultListableBeanFactory@59bbadce
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:28 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+[36mjenkins-master_1  |[0m INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59bbadce: defining beans [authenticationManager]; root of factory hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:29 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+[36mjenkins-master_1  |[0m INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@56a283f3: display name [Root WebApplicationContext]; startup date [Thu Apr 04 12:19:29 GMT 2019]; root of context hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:29 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+[36mjenkins-master_1  |[0m INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@56a283f3]: org.springframework.beans.factory.support.DefaultListableBeanFactory@28145700
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:29 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+[36mjenkins-master_1  |[0m INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@28145700: defining beans [filter,legacy]; root of factory hierarchy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:29 PM jenkins.util.groovy.GroovyHookScript execute
+[36mjenkins-master_1  |[0m INFO: Executing /var/jenkins_home/init.groovy.d/tcp-slave-agent-port.groovy
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:30 PM jenkins.InitReactorRunner$1 onAttained
+[36mjenkins-master_1  |[0m INFO: Completed initialization
+[36mjenkins-master_1  |[0m Apr 04, 2019 12:19:30 PM hudson.WebAppMain$3 run
+[36mjenkins-master_1  |[0m INFO: Jenkins is fully up and running
+[36mjenkins-master_1  |[0m --> setting agent port for jnlp
+[36mjenkins-master_1  |[0m --> setting agent port for jnlp... done
+Gracefully stopping... (press Ctrl+C again to force)
