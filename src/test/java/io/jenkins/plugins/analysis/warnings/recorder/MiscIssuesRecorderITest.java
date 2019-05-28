@@ -30,6 +30,8 @@ import io.jenkins.plugins.analysis.warnings.Eclipse;
 import io.jenkins.plugins.analysis.warnings.FindBugs;
 import io.jenkins.plugins.analysis.warnings.Pmd;
 import io.jenkins.plugins.analysis.warnings.checkstyle.CheckStyle;
+import io.jenkins.plugins.analysis.warnings.recorder.pageobj.DetailsTab;
+import io.jenkins.plugins.analysis.warnings.recorder.pageobj.DetailsTab.TabType;
 import io.jenkins.plugins.analysis.warnings.recorder.pageobj.IssueRow;
 import io.jenkins.plugins.analysis.warnings.recorder.pageobj.IssuesTable;
 import io.jenkins.plugins.analysis.warnings.recorder.pageobj.PropertyTable;
@@ -305,7 +307,7 @@ public class MiscIssuesRecorderITest extends IntegrationTestWithJenkinsPerSuite 
 
         // First build: baseline
         AnalysisResult baselineResult = scheduleBuildAndAssertStatus(project, Result.SUCCESS);
-        HtmlPage buildPage = getWebPage(baselineResult.getOwner());
+        HtmlPage buildPage = getWebPage(JavaScriptSupport.JS_DISABLED, baselineResult.getOwner());
 
         SummaryBox baselineSummary = new SummaryBox(buildPage, "eclipse");
         assertThat(baselineSummary.exists()).isTrue();
@@ -322,7 +324,8 @@ public class MiscIssuesRecorderITest extends IntegrationTestWithJenkinsPerSuite 
         assertThat(result).hasTotalSize(5);
         assertThat(result).hasQualityGateStatus(QualityGateStatus.INACTIVE);
 
-        SummaryBox resultSummary = new SummaryBox(getWebPage(result.getOwner()), "eclipse");
+        SummaryBox resultSummary = new SummaryBox(getWebPage(JavaScriptSupport.JS_DISABLED, result.getOwner()),
+                "eclipse");
         assertThat(resultSummary.exists()).isTrue();
         assertThat(resultSummary.getTitle()).isEqualTo("Eclipse ECJ: 5 warnings");
         assertThat(resultSummary.getItems()).containsExactly("3 fixed warnings",
@@ -441,7 +444,7 @@ public class MiscIssuesRecorderITest extends IntegrationTestWithJenkinsPerSuite 
     }
 
     private void verifyDetails(final AnalysisResult result) {
-        HtmlPage details = getWebPage(result);
+        HtmlPage details = getWebPage(JavaScriptSupport.JS_ENABLED, result);
 
         PropertyTable categories = new PropertyTable(details, "category");
         assertThat(categories.getTitle()).isEqualTo("Categories");
@@ -471,23 +474,27 @@ public class MiscIssuesRecorderITest extends IntegrationTestWithJenkinsPerSuite 
     }
 
     private void verifyBaselineDetails(final AnalysisResult baseline) {
-        HtmlPage baselineDetails = getWebPage(baseline);
+        HtmlPage baselineDetails = getWebPage(JavaScriptSupport.JS_ENABLED, baseline);
+        DetailsTab detailsTab = new DetailsTab(baselineDetails);
 
-        PropertyTable categories = new PropertyTable(baselineDetails, "category");
+        PropertyTable categories = detailsTab.select(TabType.CATEGORIES);
+
         assertThat(categories.getTitle()).isEqualTo("Categories");
         assertThat(categories.getColumnName()).isEqualTo("Category");
         assertThat(categories.getRows()).containsExactly(
                 new PropertyRow("Design", 2, 100),
                 new PropertyRow("Sizes", 1, 50));
 
-        PropertyTable types = new PropertyTable(baselineDetails, "type");
+        PropertyTable types = detailsTab.select(TabType.TYPES);
+
         assertThat(types.getTitle()).isEqualTo("Types");
         assertThat(types.getColumnName()).isEqualTo("Type");
         assertThat(types.getRows()).containsExactly(
                 new PropertyRow("DesignForExtensionCheck", 2, 100),
                 new PropertyRow("LineLengthCheck", 1, 50));
 
-        IssuesTable issues = new IssuesTable(baselineDetails);
+        IssuesTable issues = detailsTab.select(TabType.ISSUES);
+
         assertThat(issues.getColumnNames()).containsExactly(
                 IssueRow.DETAILS, IssueRow.FILE, IssueRow.CATEGORY, IssueRow.TYPE, IssueRow.PRIORITY, IssueRow.AGE);
         assertThat(issues.getTitle()).isEqualTo("Issues");
@@ -570,7 +577,7 @@ public class MiscIssuesRecorderITest extends IntegrationTestWithJenkinsPerSuite 
 
         assertThat(result).hasTotalSize(5);
 
-        HtmlPage details = getWebPage(result);
+        HtmlPage details = getWebPage(JavaScriptSupport.JS_ENABLED, result);
         PropertyTable categories = new PropertyTable(details, "fileName");
         assertThat(categories.getTitle()).isEqualTo("Files");
         assertThat(categories.getColumnName()).isEqualTo("File");
